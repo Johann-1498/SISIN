@@ -10,5 +10,5 @@ class Teacher(models.Model):
     phone = models.CharField(max_length=15)
     status = models.BooleanField(default=True)
 
-    def _str_(self):
+    def __str__(self):
         return f"{self.names} {self.lastnames}"
