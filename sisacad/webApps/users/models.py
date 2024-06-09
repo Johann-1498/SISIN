@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Users(models.Model):
+class User(models.Model):
     id = models.BigAutoField(primary_key=True)
     user_name = models.CharField(max_length=255)
     password = models.CharField(max_length=255)
