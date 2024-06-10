@@ -11,7 +11,7 @@ class Workload(models.Model):
     capacity = models.PositiveIntegerField()
     year = models.IntegerField(editable=False)
     semester = models.IntegerField(editable=False)
-    teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE)
+    teacher = models.ForeignKey(Teacher)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
 
     def save(self, *args, **kwargs):
