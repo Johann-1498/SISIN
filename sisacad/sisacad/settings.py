@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'webApps.teachers',
     'webApps.workloads',
     'webApps.inscriptions',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GRAPH_MODELS = {
+  'app_labels': ["courses", "students", "teachers", "workloads", "inscriptions"],
+}
